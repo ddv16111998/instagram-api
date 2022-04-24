@@ -2,8 +2,15 @@
 
 namespace App\Providers;
 
+use App\Models\Acts\Act;
+use App\Models\Feels\Feel;
+use App\Models\Posts\Post;
+use App\Models\Posts\TagUser;
+use App\Policies\ActPolicy;
+use App\Policies\FeelPolicy;
+use App\Policies\PostPolicy;
+use App\Policies\Posts\TagUserPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use Illuminate\Support\Facades\Gate;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -14,6 +21,10 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         // 'App\Models\Model' => 'App\Policies\ModelPolicy',
+        Post::class => PostPolicy::class,
+        Feel::class => FeelPolicy::class,
+        Act::class => ActPolicy::class,
+        TagUser::class => TagUserPolicy::class,
     ];
 
     /**

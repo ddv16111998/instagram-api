@@ -131,6 +131,36 @@
         .instagram .main .posts .post .btn-comment{
             text-align: right;
         }
+        .friend-onl{
+            padding-top: 30px;
+        }
+        .list-friend-onl li{
+            list-style: none;
+            margin-bottom: 15px;
+            display: flex;
+        }
+
+        .list-friend-onl li .avatar-and-online{
+            position: relative;
+            padding-right: 10px;
+        }
+        .list-friend-onl li .avatar{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: relative;
+
+        }
+
+        .list-friend-onl li .status-online{
+            width: 9px;
+            height: 9px;
+            background-color: #00ac40;
+            border-radius: 50%;
+            position: absolute;
+            top: 21px;
+            left: 21px;
+        }
 
     </style>
 </head>
@@ -405,6 +435,42 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" style="text-align: right">
+                        <div class="friend-onl">
+                            <ul class="list-friend-onl">
+                                <li><b>List friend online</b></li>
+                                <li>
+                                    <div class="avatar-and-online">
+                                        <img src="{{asset('/images/logo-user.png')}}" class="avatar" alt="">
+                                        <div class="status-online"></div>
+                                    </div>
+                                    <span class="name">viendd</span>
+                                </li>
+                                <li>
+                                    <div class="avatar-and-online">
+                                        <img src="{{asset('/images/logo-user.png')}}" class="avatar" alt="">
+                                        <div class="status-online"></div>
+                                    </div>
+                                    <span class="name">viendd</span>
+                                </li>
+                                <li>
+                                    <div class="avatar-and-online">
+                                        <img src="{{asset('/images/logo-user.png')}}" class="avatar" alt="">
+                                        <div class="status-online"></div>
+                                    </div>
+                                    <span class="name">viendd</span>
+                                </li>
+                                <li>
+                                    <div class="avatar-and-online">
+                                        <img src="{{asset('/images/logo-user.png')}}" class="avatar" alt="">
+                                        <div class="status-online"></div>
+                                    </div>
+                                    <span class="name">viendd</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::resource('feels', \App\Http\Controllers\FeelsController::class)->only('index');
+Route::resource('acts', \App\Http\Controllers\ActsController::class)->only('index');
+Route::resource('posts', \App\Http\Controllers\PostsController::class);
